@@ -21,7 +21,7 @@ class CreateQuestionTagsTable extends Migration
         });
         Schema::table('question_tags', function(Blueprint $table){
             $table->foreign('question')->references('id')->on('questions');
-        }
+        });
     }
 
     /**
