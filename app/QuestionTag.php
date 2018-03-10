@@ -1,0 +1,12 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class QuestionTag extends Model
+{
+    protected $filable = [ 
+    	'question', 'tag' 
+	];
+}
