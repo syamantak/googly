@@ -18,7 +18,7 @@ class CreateAnswersTable extends Migration
             $table->integer('user')->unsigned();
             $table->integer('question')->unsigned();
             $table->text('answerlink');
-            $table->text('note');
+            $table->text('note')->nullable();
             $table->timestamps();
         });
 

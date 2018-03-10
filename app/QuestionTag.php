@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class QuestionTag extends Model
 {
-    protected $filable = [ 
+    protected $fillable = [ 
     	'question', 'tag' 
 	];
 }
