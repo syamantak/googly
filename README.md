@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+# Googly
+Laravel app for saving your google searches with exact answer links. If you are coder that should save you lot of time and you will search here before you search google. You can have multiple users using this from where you host this.
 
-You can use the [editor on GitHub](https://github.com/syamantak/googly/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/syamantak/googly/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Install
+1. Clone repository
+2. Add .env
+3. Setup database in your phpmyadmin and run "php artisan migrate"
+4. Run the site 
+5. Sign up and sign up and use
+6. You check all features and you may modify and add new features
