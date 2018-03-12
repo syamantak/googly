@@ -46,7 +46,7 @@
                       <div class="form-group">
                         <label for="answerlink" class="col-sm-2 control-label">Answer Link</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" name="answerlink[]"  required>
+                          <input type="text" class="form-control" name="answerlink"  required>
 
                                 @if ($errors->has('answerlink'))
                                     <span class="help-block">
