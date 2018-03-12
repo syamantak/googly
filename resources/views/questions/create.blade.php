@@ -41,18 +41,7 @@
                         </div>
                       </div>
 
-                      <div class="form-group">
-                        <label for="note" class="col-sm-2 control-label">Note</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="note">
-
-                                @if ($errors->has('note'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('note') }}</strong>
-                                    </span>
-                                @endif
-                        </div>
-                      </div>
+                     
 
                       <div class="form-group">
                         <label for="answerlink" class="col-sm-2 control-label">Answer Link</label>
@@ -67,57 +56,7 @@
                         </div>
                       </div>
                       
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Answer Link</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="answerlink[]"  >
-
-                                @if ($errors->has('answerlink'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('answerlink') }}</strong>
-                                    </span>
-                                @endif
-                        </div>
-                      </div>
                       
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Answer Link</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="answerlink[]" >
-
-                                @if ($errors->has('answerlink'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('answerlink') }}</strong>
-                                    </span>
-                                @endif
-                        </div>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Answer Link</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="answerlink[]"  >
-
-                                @if ($errors->has('answerlink'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('answerlink') }}</strong>
-                                    </span>
-                                @endif
-                        </div>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Answer Link</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="answerlink[]"  >
-
-                                @if ($errors->has('answerlink'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('answerlink') }}</strong>
-                                    </span>
-                                @endif
-                        </div>
-                      </div>
                       
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

@@ -48,10 +48,9 @@
                         <tr>
                           <th scope="col">Question</th>
                           <th scope="col">Tags</th>
-                          <th scope="col">View</th>
+                          <th scope="col">Answer</th>
                           @if(Auth::check())
                           <th scope="col">Edit</th>
-                          <th scope="col">Delete</th>
                           @endif
                         </tr>
                       </thead>
@@ -60,20 +59,11 @@
                             <tr>
                               <td>{{ $question->question }}</td>
                               <td>
-                                @if(count($question->tags) > 0)
-                                    @if(count($question->tags) == 1)
-                                        <button type="button" class="btn btn-primary btn-sm">{{ $question->tags }}</button>
-                                    @else
-                                      @foreach($question->tags as $tag)
-                                        <button type="button" class="btn btn-primary btn-sm">{{ $tag }}</button>
-                                      @endforeach
-                                    @endif
-                                @endif
+                                 <button type="button" class="btn btn-primary btn-sm">{{ $question->tags }}</button>
                               </td>
-                              <td><a href="{{ url('/view/question/' . $question->id) }}">View</a></td>
+                              <td><a href="{{ $question->answerlink }}">Answer</a></td>
                               @if(Auth::id() == $question->user)
                                 <td><a href="{{ url('/edit/question/' . $question->id) }}">Edit</a></td>
-                                <td><a href="{{ url('/delete/question/' . $question->id) }}">Delete</a></td>
                               @endif
                             </tr>
                         @endforeach

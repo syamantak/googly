@@ -32,7 +32,7 @@
                       <div class="form-group">
                         <label for="tags" class="col-sm-2 control-label">Tags</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" name="tags" value="{{ count($question->tags) > 1 ? implode(',', $question->tags) : count($question->tags) == 1 ? $question->tags : '' }}" required>
+                          <input type="text" class="form-control" name="tags" value="{{ $question->tags }}" required>
 
                                 @if ($errors->has('tags'))
                                     <span class="help-block">
@@ -43,24 +43,9 @@
                       </div>
 
                       <div class="form-group">
-                        <label for="note" class="col-sm-2 control-label">Note</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" name="note" value="{{ $question->note != null ? $question->note :  '' }}">
-
-                                @if ($errors->has('note'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('note') }}</strong>
-                                    </span>
-                                @endif
-                        </div>
-                      </div>
-
-                      @if(count($question->answers) > 0)
-                        @if(count($question->answers) == 1)
-                        <div class="form-group">
                             <label for="answerlink" class="col-sm-2 control-label">Answer Link</label>
                             <div class="col-sm-10">
-                              <input type="text" class="form-control" name="answerlink[]" value="{{ $question->answers }}"  required>
+                              <input type="text" class="form-control" name="answerlink[]" value="{{ $question->answerlink }}"  required>
 
                                   @if ($errors->has('answerlink'))
                                       <span class="help-block">
@@ -69,24 +54,9 @@
                                   @endif
                             </div>
                           </div>
-                        @else
-                        @foreach($question->answers as $answer)
-                          <div class="form-group">
-                            <label for="answerlink" class="col-sm-2 control-label">Answer Link</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" name="answerlink[]" value="{{ $answer }}"  required>
 
-                                  @if ($errors->has('answerlink'))
-                                      <span class="help-block">
-                                          <strong>{{ $errors->first('answerlink') }}</strong>
-                                      </span>
-                                  @endif
-                            </div>
-                          </div>
-                        @endforeach
-                        @endif
-                      @endif
                       
+
                       
                       
                       <div class="form-group">
